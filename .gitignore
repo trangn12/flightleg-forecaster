@@ -1,5 +1,7 @@
 # Node modules
 client/node_modules/
+client_old/node_modules/
+client_old/.env
 client/.env
 
 # Python
