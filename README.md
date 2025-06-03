@@ -1,8 +1,8 @@
-AI Flight Advisory System
+**AI Flight Advisory System**
 
 A full-stack application that provides pilots with AI-generated route recommendations based on real-time weather data between two airports. It features a 3D interactive globe to visualize selected routes and weather conditions.
 
-Features
+**Features**
 
 3D interactive globe (using react-globe.gl)
 
@@ -16,10 +16,10 @@ Backend powered by Flask + Python
 
 CORS-enabled API routing and JSON response handling
 
-Getting Started
+**Getting Started**
 
-Prerequisites
-
+**Prerequisites
+**
 Node.js
 
 Python 3
@@ -30,13 +30,13 @@ OpenWeatherMap API key
 
 Gemini API key (via Google)
 
-Frontend Setup (React)
+**Frontend Setup (React)**
 
 cd client
 npm install
 npm run start
 
-Backend Setup (Flask)
+**Backend Setup (Flask)**
 
 cd server
 pip install -r requirements.txt
@@ -50,7 +50,7 @@ Then run:
 
 flask run
 
-🗘️ File Structure
+**File Structure**
 
 root/
 ├── server/
@@ -71,7 +71,7 @@ root/
 │   │   └── App.css
 └── README.md
 
-AI Briefing Logic
+**AI Briefing Logic**
 
 The backend compiles weather info for two airports and sends it as a prompt to Gemini. The response includes:
 
@@ -83,7 +83,7 @@ Takeoff/landing considerations
 
 Risk level & safety notes
 
-Contact
+**Contact**
 
 Built by Trang Nguyen
 Email: trangnguyen@uci.edu
