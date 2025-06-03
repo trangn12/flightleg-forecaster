@@ -1,0 +1,72 @@
+/* Define color palette and global styles */
+:root {
+  --primary-color: #0D0D0D; /* Very dark grey, almost black */
+  --secondary-color: #F5F5F5; /* Off-white */
+  --accent-color: #bbb5f8; /* Cyan/Aqua - good for glowing */
+  --accent-color-darker: #5c62a6;
+  --text-glow-color: rgba(251, 182, 245, 0.7);
+  --dot-color-active: #FF3B30; /* A contrasting color for active/highlighted dots */
+
+  --font-family-main: 'Exo 2', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  /* background-image: url('/space-bg.jpg'); Reference from public folder */
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Custom scrollbar for a more modern feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color-darker);
+  border-radius: 10px;
+  border: 2px solid var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent-color);
+}
+
+.main-content {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 60px); /* Adjust based on your header height */
+  padding: 20px;
+  gap: 20px;
+}
+
+.panel {
+  background-color: rgba(13, 13, 13, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(187, 181, 248, 0.1);
+}
+
+.left-panel {
+  flex: 1;
+  min-width: 300px;
+}
+
+.right-panel {
+  flex: 1;
+  min-width: 300px;
+}

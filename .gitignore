@@ -1,0 +1,15 @@
+# Node modules
+client/node_modules/
+client_old/node_modules/
+client_old/.env
+client/.env
+
+# Python
+server/venv/
+server/__pycache__/
+server/.env
+
+# General
+.DS_Store
+.env
+venv/

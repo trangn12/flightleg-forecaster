@@ -1,0 +1,55 @@
+.appHeader {
+    background: rgba(10, 10, 20, 0.8); /* Dark semi-transparent background */
+    backdrop-filter: blur(10px);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--accent-color-darker);
+    position: fixed; /* Keep header fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+  }
+  
+  .searchContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+  }
+  
+  .flight {
+    color: var(--secondary-color);
+    font-weight: 700;
+  }
+  
+  .dashboard {
+    color: var(--accent-color);
+    font-weight: 300;
+    text-shadow: 0 0 8px var(--text-glow-color);
+  }
+  
+  .navLink {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    padding-bottom: 5px;
+  }
+  
+  .navLink:hover {
+    color: var(--accent-color);
+    text-shadow: 0 0 10px var(--text-glow-color);
+    border-bottom: 1px solid var(--accent-color);
+  }
