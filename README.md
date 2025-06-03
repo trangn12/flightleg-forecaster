@@ -1,22 +1,90 @@
-# FlightLeg Forecaster
+AI Flight Advisory System
 
-An AI-powered weather impact forecasting tool designed for Part 135 charter operators flying Gulfstream G550s. Given a flight leg and proposed departure time, this tool predicts potential weather-related delays and suggests alternative departure windows.
+A full-stack application that provides pilots with AI-generated route recommendations based on real-time weather data between two airports. It features a 3D interactive globe to visualize selected routes and weather conditions.
 
----
+Features
 
-## Features
+3D interactive globe (using react-globe.gl)
 
-- Predicts risk of delay due to snow, turbulence, or icing based on destination and season.
-- Recommends adjusted departure time to avoid risk windows.
-- Clean React frontend with form-based input.
-- Flask backend using heuristic rules for rapid, interpretable forecasting.
-- Easy to extend with real-time weather APIs or GPT logic.
+Airport selection & route visualization
 
----
+Real-time weather data via OpenWeatherMap
 
-## How to Run
+AI-generated flight briefings with Gemini Pro (Google)
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/trangn12/flightleg-forecaster.git
-cd flightleg-forecaster
+Backend powered by Flask + Python
+
+CORS-enabled API routing and JSON response handling
+
+Getting Started
+
+Prerequisites
+
+Node.js
+
+Python 3
+
+pip or pipenv
+
+OpenWeatherMap API key
+
+Gemini API key (via Google)
+
+Frontend Setup (React)
+
+cd client
+npm install
+npm run start
+
+Backend Setup (Flask)
+
+cd server
+pip install -r requirements.txt
+
+Create a .env file in server/:
+
+WEATHER_KEY=your_openweather_key
+GEMINI_API_KEY=your_gemini_key
+
+Then run:
+
+flask run
+
+🗘️ File Structure
+
+root/
+├── server/
+│   ├── app.py
+│   ├── Airports.txt
+│   └── .env
+├── client/
+│   ├── src/
+│   │   ├── App.js
+│   │   ├── components/
+│   │   │   ├── GlobeComponent/
+│   │   │   │   ├── GlobeComponent.js
+│   │   │   │   └── GlobeComponent.module.css
+│   │   │   └── Header/
+│   │   │       ├── Header.js
+│   │   │       └── SearchForm.js
+│   │   ├── Airports.js
+│   │   └── App.css
+└── README.md
+
+AI Briefing Logic
+
+The backend compiles weather info for two airports and sends it as a prompt to Gemini. The response includes:
+
+Detailed weather summaries
+
+Route feasibility
+
+Takeoff/landing considerations
+
+Risk level & safety notes
+
+Contact
+
+Built by Trang Nguyen
+Email: trangnguyen@uci.edu
+GitHub: github.com/trangn12
