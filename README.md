@@ -2,6 +2,9 @@
 
 A full-stack application that provides pilots with AI-generated route recommendations based on real-time weather data between two airports. It features a 3D interactive globe to visualize selected routes and weather conditions.
 
+**Project Demo**
+https://drive.google.com/file/d/1FvwD3d-xEL2zSOXKCBwhE3veMM0LMoRl/view
+
 **Features**
 
 3D interactive globe (using react-globe.gl)
